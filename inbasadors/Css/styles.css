@@ -7,148 +7,94 @@
     box-sizing: border-box;
 }
 .header{
-width: 100%;
-height: 4.2em;
-background-color: #222222;
-}
-.logo{
-  width: 30%;
-  margin-left: 7%;
+    width: 100%;
+    height: 4.2em;
+    background-color: #222222;
 }
 
-.container{
-    display: flex;
+.contenedor-principal{
+    width: 100%;
+    height: 100%;
+    background: #b4b4ac;
     margin: 0;
     padding: 0;
-    border: 0px;
-    height: 100%;
+    border: 0;
+   
+}
+.contenedor-principal .section1{
     width: 100%;
+    background-color: rgba(155, 170, 170, 0.712);
+    float: left;
 }
-
-.imbasores{
-position: relative;
-height: 6rem;
-width: 20rem;
-top: 13.5rem;
-left: 10em;
-}
-.row{
-  padding-left: 30%;
-  padding-top: 20%;
-}
-.textoPrincipal{
-  right: 46%;
-  position: absolute;
-  height: 4em;
-  width: 26em;
-  top: 58%;
-}
-p{
-position: absolute;
- display: inline-block;
-height: 20px;
-font-size: 20px;
-line-height: 25px;
-color: #110f0f;
-font-weight: 600;
-font-family: "Montserrat";
-}
-.signupFrm {
-  position: absolute;
-    display: flex;
-    justify-content: center;
+.contForm{
+    background-color: #474444;
+    width: 50%;
     align-items: center;
-    height: 20rem;
-    width: 7em;
-    left: 70%;
-    bottom: 20%;
-  }
-.form {
-    filter: drop-shadow(0px 3px 3.5px);
-    background-color: #151515;
-    width: 30em;
-    border-radius: 26px;
-    padding: 20px 40px;
-    filter: drop-shadow(0px 3px 3.5px rgba(39,45,59,0.2));
-  }
-.fecha{
-    width: 58px;
-    height: 58px;
-    border-radius: 29px;
-    filter: drop-shadow(0px 3px 3.5px rgba(63,242,255,0.58));
-    background-color: #8062e2;
-    top: -30px;
-    margin-left: 36%;
-    }
-    .fa-solid{
-      color: #ffffff;
-      margin-left: 0.5em;
-      align-items: center;
-    }
-.title {
-    color: #45ec9c;
-    font-size: 48px;
-    letter-spacing: -2px;
-    line-height: 51px;
-    font-weight: 700;
-    margin-bottom: 50px;
-    font-family: "Montserrat";
-  }
-.inputContainer {
-    background-color: #3d3b3b;
-    position: relative;
-    height: 45px;
-    width: 90%;
-    border-radius: 20px;
-    margin-bottom: 17px;
-  }
-.input {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
+}
+.section2{
     width: 100%;
-    border: 1px solid #092969;
-    border-radius: 20px;
-    font-size: 16px;
-    padding: 0 20px;
-    outline: none;
-    background: none;
-    z-index: 1;
+    padding: 15%;
+}
+.section3{
+    width: 100%;
+    background-color: beige;
+}
+.section3 .contenedor{
+border: 0;
+width: 100%;
+padding: 16%;
+}
+.section4, .contenedor4  {
+    width: 100%;
+    background-image: url("/inbasadors/img/img/fondo.png");
+    background-color: #3a3737;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.section4.contenido_section4{
+    width: 90%;
+    height: 100%;
+}
+.contenido_section4 .text-center{
+    padding-top: 10%;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.contenido_section4 .button{
+    padding-top: 5%;
+    text-align: center;
+}
+.section5{
+width: 100%;
+
+background-color: rgb(43, 88, 128);
+}
+.contenedor5{
+    width: 100%;
+    padding: 15%;
+}
+.contenido_section5{
+    
+}
+.section6{
+    width: 100%;
+    background-color: rgb(170, 16, 16);
+}
+.contenido_section6{
+    width: 100%;
+    padding: 15%;
+    height: 50vh;
+}
+.column {
+    float: left;
+    width: 25%;
   }
-  
-  
-  ::placeholder {
-    color: #574949;
-  }
-  .submitBtn {
-    display: block;
-    margin-left: auto;
-    padding: 15px 30px;
-    border: none;
-    background-color: #8062e2;;
-    color: #f5fbff;
-    border-radius: 26px;
-    cursor: pointer;
-    font-size: 15px;
-    margin-top: 30px;
-    height: 52px;
-    font-weight: 600;
-    font-family: "Montserrat";
-  }
-  
-  .submitBtn:hover {
-    background-color: #2d09a0;
-    transform: translateY(-2px);
-  }
-  .input:focus + .label {
-    top: -7px;
-    left: 3px;
-    z-index: 10;
-    font-size: 14px;
-    font-weight: 600;
-    color: rgb(28, 0, 128);
-  }
-  .input:focus {
-    border: 2px solid rgb(48, 15, 139);
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
